@@ -1,1 +1,4 @@
-.exe
+*.exe
+.gitconfig
+.vs/
+.vscode/
