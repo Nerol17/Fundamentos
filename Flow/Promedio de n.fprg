@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="Promedio"/>
+        <attribute name="authors" value="Nero_17"/>
+        <attribute name="about" value="Obtiene el promedio desde 1 hasta &quot;n&quot; n&#250;meros."/>
+        <attribute name="saved" value="2023-09-11 11:39:37 p. m."/>
+        <attribute name="created" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMTE7MDc6NTM6NTMgcC4gbS47MjcwMQ=="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMTE7MTE6Mzk6MzcgcC4gbS47NTsyODE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, s" type="Integer" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="s" expression="s + i"/>
+                <output expression="s" newline="True"/>
+            </for>
+            <assign variable="p" expression="s / n"/>
+            <output expression="p&amp; &quot; es el promedio de la suma desde 1 hasta &quot; &amp; n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-07 12:53:10 a. m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTA1OzEwOjE2OjA5IGEuwqBtLjsyMzE0"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTA1OzExOjUzOjU2IGEuwqBtLjs0OzI0Mjk="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMDc7MTI6NTM6MTAgYS4gbS47MTQ7Mjg0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, i, r, divisores" type="Integer" array="False" size=""/>
+            <declare name="divisible" type="Boolean" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="m"/>
+            <assign variable="i" expression="2"/>
+            <assign variable="divisores" expression="0"/>
+            <assign variable="divisible" expression="false"/>
+            <while expression="i &lt;= m">
+                <for variable="r" start="n" end="m" direction="inc" step="1">
+                    <if expression="r % i == 0">
+                        <then>
+                            <assign variable="divisible" expression="true"/>
+                            <assign variable="divisores" expression="divisores + 1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="i" expression="i + 1"/>
+                </for>
+            </while>
+            <for variable="r" start="n" end="m" direction="inc" step="1">
+                <do expression="r &lt;= m">
+                    <if expression="divisible &amp;&amp; divisores == 1">
+                        <then>
+                            <output expression="r &amp; &quot; si es!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="r &amp; &quot; no es!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </do>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

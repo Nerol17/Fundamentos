@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nero_17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-26 10:41:36 p. m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzExOjI3OjQzIGEuwqBtLjsyMzIw"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzExOjM3OjQyIGEuwqBtLjsxOzI0Mjg="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTA6NDE6MzYgcC4gbS47NTsyODEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="raiz" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="raiz" expression="sqrt(n)"/>
+            <if expression="raiz % 1 == 0">
+                <then>
+                    <output expression="raiz" newline="True"/>
+                </then>
+                <else>
+                    <while expression="raiz % 1 != 0">
+                        <assign variable="n" expression="n - 1"/>
+                        <assign variable="raiz" expression="n ^ (1/2)"/>
+                    </while>
+                    <output expression="&quot;El entero anterior que si es cuadrado perfecto es: &quot; &amp;n" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

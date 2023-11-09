@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-26 10:44:32 p. m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzExOjM3OjQ1IGEuwqBtLjsyMzIz"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzExOjUyOjI3IGEuwqBtLjsxOzI0Mjg="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTA6NDQ6MzIgcC4gbS47MTsyODA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <while expression="n != 0">
+                <if expression="n &gt; 0">
+                    <then>
+                        <output expression="&quot;Es positivo&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Es negativo&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="n"/>
+            </while>
+            <output expression="&quot;Es cero&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

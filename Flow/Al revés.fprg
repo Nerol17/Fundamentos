@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="N&#250;meros al rev&#233;s"/>
+        <attribute name="authors" value="Nero_17"/>
+        <attribute name="about" value="Escribe al rev&#233;s el n&#250;mero que se ingresa."/>
+        <attribute name="saved" value="2023-09-13 11:38:48 p. m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTEyOzExOjIxOjUyIGEuwqBtLjsyMzA3"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTEyOzExOjU3OjAxIGEuwqBtLjsxOzI0MTg="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMTM7MTE6Mzg6NDggcC4gbS47OTsyODIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, r" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="r" expression="n % 10"/>
+            <while expression="n &gt; 10">
+                <assign variable="r" expression="r*10"/>
+                <assign variable="n" expression="n / 10"/>
+                <assign variable="r" expression="r + (n%10)"/>
+            </while>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

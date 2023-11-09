@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="Sumatoria de i^2 y de la serie de Fibonacci"/>
+        <attribute name="authors" value="Nero_17"/>
+        <attribute name="about" value="Calcula la sumatoria de los primeros &quot;n&quot; n&#250;meros de i^2 y de la serie de n&#250;meros de Fibonacci."/>
+        <attribute name="saved" value="2023-09-11 11:54:24 p. m."/>
+        <attribute name="created" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMTE7MTA6MzI6MTcgcC4gbS47MjY5Mg=="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMTE7MTE6NTQ6MjQgcC4gbS47MjsyODA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, s, a, b, c, f" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="f" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="s" expression="s + i^2"/>
+                <assign variable="c" expression="a + b"/>
+                <assign variable="f" expression="f + c"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <output expression="c" newline="True"/>
+            </for>
+            <output expression="s&amp; &quot; es la sumatoria de los &quot; &amp;n&amp; &quot; primeros t&#233;rminos de i^2&quot;" newline="True"/>
+            <output expression="f&amp; &quot; es la sumatoria de los &quot; &amp;n&amp; &quot; primeros t&#233;rminos de la serie de Fibonacci&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nero_17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-26 11:18:56 a. m."/>
+        <attribute name="created" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTA6MTQ6MDcgYS4gbS47MjY4Mg=="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTA6Mjk6NTEgYS4gbS47MjtDRU5USUM7Mi0xLTE3OzIwMjMtMDktMDU7MTA6MTY6MDkgYS7CoG0uO1ByaW1vbm8uZnByZzs2NDQ1"/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTE6MTg6NTYgYS4gbS47MzsyODAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, tipo, divisores" type="Integer" array="False" size=""/>
+            <declare name="divisible" type="Boolean" array="False" size=""/>
+            <output expression="&quot;0 - calcula si n es primo&quot;" newline="True"/>
+            <output expression="&quot;1 - calcula si n es par o impar&quot;" newline="True"/>
+            <input variable="tipo"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="divisores" expression="0"/>
+            <assign variable="divisible" expression="false"/>
+            <if expression="tipo == 0">
+                <then>
+                    <input variable="n"/>
+                    <assign variable="i" expression="1"/>
+                    <if expression="n &gt;= 0">
+                        <then>
+                            <while expression="i &lt; n">
+                                <if expression="n % i == 0">
+                                    <then>
+                                        <assign variable="divisible" expression="true"/>
+                                        <assign variable="divisores" expression="divisores + 1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <assign variable="i" expression="i + 1"/>
+                            </while>
+                            <if expression="divisible &amp;&amp; divisores &lt; 2">
+                                <then>
+                                    <output expression="n&amp; &quot; es primo&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="n&amp; &quot; no es primo&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Debe ingresar valores positivos para n&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="tipo == 1">
+                        <then>
+                            <input variable="n"/>
+                            <if expression="n &gt;= 0">
+                                <then>
+                                    <if expression="n % 2 == 0">
+                                        <then>
+                                            <output expression="n&amp; &quot; es par&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="n&amp; &quot; es impar&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Debe ingresar valores positivos para n&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Entrada incorrecta&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nero_17"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 02:02:32 a. m."/>
+        <attribute name="created" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjc7MDE6NDU6MTAgYS4gbS47MjY4MQ=="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjc7MDE6NDU6MTMgYS4gbS47MTttYXJpbztDQUxBTULDgVM7MjAyMy0wOS0yNjsxMDoxNDowNyBhLiBtLjtQcmltbyBvIHBhci5mcHJnOzcwODY="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjc7MDI6MDI6MzIgYS4gbS47MTsyNzg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt;= n">
+                <if expression="i % 3 == 0">
+                    <then>
+                        <if expression="i % 5 == 0">
+                            <then>
+                                <output expression="i&amp; &quot;. es divisible por 3 y 5&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="i&amp; &quot;. es divisible por 3&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="i % 5 == 0">
+                            <then>
+                                <output expression="i&amp; &quot;. es divisible por 5&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="i&amp; &quot;.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

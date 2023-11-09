@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-26 08:04:52 p. m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzEwOjM1OjUzIGEuwqBtLjsyMzE5"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzExOjI2OjA5IGEuwqBtLjszOzI0MzE="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MDc6NTc6MTEgcC4gbS47MjtDRU5USUM7Mi0xLTE3OzIwMjMtMDktMTk7MTA6MzU6NTMgYS7CoG0uO1BhcmVzIGhhc3RhIG4uZnByZzs2OTM4"/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MDc6NTc6MjQgcC4gbS47MTttYXJpbztDQUxBTULDgVM7MjAyMy0wOS0yNjsxMDoxNDowNyBhLiBtLjtQcmltbyBvIHBhci5mcHJnOzcxMTE="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MDg6MDQ6NTIgcC4gbS47MjsyODEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, tipo" type="Integer" array="False" size=""/>
+            <output expression="&quot;0 - para pares&quot;" newline="True"/>
+            <output expression="&quot;1 - para impares&quot;" newline="True"/>
+            <input variable="tipo"/>
+            <assign variable="i" expression="1"/>
+            <if expression="tipo == 0">
+                <then>
+                    <input variable="n"/>
+                    <output expression="&quot;Los pares desde 0 hasta &quot; &amp;n" newline="False"/>
+                    <output expression="&quot; son:&quot;" newline="True"/>
+                    <while expression="i &lt;= n">
+                        <if expression="i % 2 == 0">
+                            <then>
+                                <output expression="i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="i" expression="i + 1"/>
+                    </while>
+                </then>
+                <else>
+                    <if expression="tipo == 1">
+                        <then>
+                            <input variable="n"/>
+                            <output expression="&quot;Los impares desde 0 hasta &quot; &amp;n" newline="False"/>
+                            <output expression="&quot; son:&quot;" newline="True"/>
+                            <while expression="i &lt;= n">
+                                <if expression="i % 2 == 0">
+                                    <then/>
+                                    <else>
+                                        <output expression="i" newline="True"/>
+                                    </else>
+                                </if>
+                                <assign variable="i" expression="i + 1"/>
+                            </while>
+                        </then>
+                        <else>
+                            <output expression="&quot;Entrada incorrecta&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-06 09:42:03 p. m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTA1OzEwOjE2OjA5IGEuwqBtLjsyMzE0"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTA1OzExOjUzOjU2IGEuwqBtLjs0OzI0Mjk="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMDY7MDk6NDI6MDMgcC4gbS47MTA7Mjg1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, divisores" type="Integer" array="False" size=""/>
+            <declare name="divisible" type="Boolean" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="divisores" expression="0"/>
+            <assign variable="divisible" expression="false"/>
+            <while expression="i &lt; n">
+                <if expression="n % i == 0">
+                    <then>
+                        <assign variable="divisible" expression="true"/>
+                        <assign variable="divisores" expression="divisores + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <if expression="divisible &amp;&amp; divisores &lt; 2">
+                <then>
+                    <output expression="n &amp; &quot; si es!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n &amp; &quot; no es!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

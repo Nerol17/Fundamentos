@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="N&#250;meros al rev&#233;s"/>
+        <attribute name="authors" value="Nero_17"/>
+        <attribute name="about" value="Escribe al rev&#233;s el n&#250;mero que se ingresa."/>
+        <attribute name="saved" value="2023-09-27 02:40:44 a. m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTEyOzExOjIxOjUyIGEuwqBtLjsyMzA3"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTEyOzExOjU3OjAxIGEuwqBtLjsxOzI0MTg="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTE6MjQ6MjMgYS4gbS47MTtDRU5USUM7Mi0xLTE3OzIwMjMtMDktMTI7MTE6MjE6NTIgYS7CoG0uO0FsIHJldsOpcy5mcHJnOzY1Nzg="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjc7MDI6NDA6NDQgYS4gbS47MTM7Mjg0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, r, i, sol, res, solucion" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="r" expression="n % 10"/>
+            <assign variable="res" expression="0"/>
+            <assign variable="solucion" expression="0"/>
+            <while expression="i &lt;= 5">
+                <assign variable="solucion" expression="r + res"/>
+                <output expression="solucion&amp; &quot; primero&quot;" newline="True"/>
+                <assign variable="n" expression="n / 10"/>
+                <output expression="n&amp; &quot; n&quot;" newline="True"/>
+                <assign variable="r" expression="n % 10"/>
+                <output expression="r&amp; &quot; r&quot;" newline="True"/>
+                <assign variable="i" expression="i + 2"/>
+                <output expression="i&amp; &quot; i&quot;" newline="True"/>
+                <assign variable="res" expression="r * (10)^i"/>
+                <output expression="res&amp; &quot; res&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

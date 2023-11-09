@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-26 10:53:54 a. m."/>
+        <attribute name="created" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTA6MDk6MjAgYS4gbS47MjY4MQ=="/>
+        <attribute name="edited" value="bWFyaW87Q0FMQU1Cw4FTOzIwMjMtMDktMjY7MTA6NTM6NTQgYS4gbS47MTsyNzk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, den" type="Integer" array="False" size=""/>
+            <declare name="suma, res" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="suma" expression="0"/>
+            <assign variable="res" expression="0"/>
+            <while expression="i &lt; n">
+                <assign variable="den" expression="2 * i + 1"/>
+                <if expression="i % 2 != 0">
+                    <then>
+                        <assign variable="suma" expression="(-1) / den"/>
+                    </then>
+                    <else>
+                        <assign variable="suma" expression="1 / den"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+                <assign variable="res" expression="suma + res"/>
+            </while>
+            <assign variable="res" expression="res * 4"/>
+            <output expression="res" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

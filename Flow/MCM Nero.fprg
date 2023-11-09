@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-19 10:35:49 a.&#160;m."/>
+        <attribute name="created" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzEwOjIxOjI3IGEuwqBtLjsyMzE1"/>
+        <attribute name="edited" value="Q0VOVElDOzItMS0xNzsyMDIzLTA5LTE5OzEwOjM1OjQ5IGEuwqBtLjsxOzI0MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, min, max, mcm, i" type="Integer" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <assign variable="max" expression="n1 * n2"/>
+            <assign variable="mcm" expression="max"/>
+            <if expression="n1 &gt; n2">
+                <then>
+                    <assign variable="min" expression="n1"/>
+                </then>
+                <else>
+                    <assign variable="min" expression="n2"/>
+                </else>
+            </if>
+            <for variable="i" start="min" end="max" direction="inc" step="1">
+                <if expression="(i % n1 == 0) &amp;&amp; (i % n2 == 0)">
+                    <then/>
+                    <else/>
+                </if>
+            </for>
+            <output expression="mcm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
