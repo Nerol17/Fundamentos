@@ -1,4 +1,5 @@
 *.exe
-.gitconfig
+*.gitconfig
 .vs/
 .vscode/
+*.bashrc
