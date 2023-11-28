@@ -2,5 +2,5 @@
 *.gitconfig
 .vs/
 .vscode/
-*.bashrc
 desktop.ini
+nomina.txt
